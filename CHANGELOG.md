@@ -2,5 +2,5 @@
 
 ## v0.1
 
-- Signature Checker controller concern
-- Server Validations controller # Index action
+1. Signature Checker controller concern
+2. Server Validations controller # Index action

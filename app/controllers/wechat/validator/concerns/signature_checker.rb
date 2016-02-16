@@ -26,9 +26,15 @@ module Wechat
             return unless check_parameter 'signature', signature
             return unless check_parameter 'echo',      echo
 
-            actual_signature = ::Wechat::Validation.sign nonce, timestamp, token
-            Rails.logger.warn "Actual signature is #{actual_signature}, which #{signature==actual_signature ? 'equals' : 'does not equal'} to the given signature #{signature}."
-            render text: (signature==actual_signature ? echo : '')
+            actual_signature  = ::Wechat::Validation.sign nonce, timestamp, token
+            signature_matched = signature==actual_signature
+            Rails.logger.warn "Actual signature is #{actual_signature}, which #{signature_matched ? 'equals' : 'does not equal'} to the given signature #{signature}."
+
+            if signature_matched
+              render text: echo
+            else
+              render status: :forbidden, text: ''
+            end
 
           end
 
