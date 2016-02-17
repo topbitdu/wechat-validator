@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors     = [ 'Topbit Du' ]
   spec.email       = [ 'topbit.du@gmail.com' ]
   spec.homepage    = 'https://github.com/topbitdu/wechat-validator'
-  spec.summary     = 'The Wechat Validator engine includes a concern and a controller to handle the Wechat server validation request.'
-  spec.description = 'The Wechat Validator engine handles the Wechat server validation requests.'
+  spec.summary     = 'Wechat Validator Engine 微信验证器引擎'
+  spec.description = 'The Wechat Validator engine handles the Wechat server validation requests. 微信验证器引擎处理微信服务器的验证请求。'
   spec.license     = 'MIT'
 
   spec.files         = Dir[ '{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md' ]
