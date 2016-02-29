@@ -14,7 +14,7 @@ mount Wechat::Validator::Engine, at: '/wechat-validator'
 
 In the application's /config/secrets.yml file, add the following line for the development, test, and production categories. The wechat_validation_token should be identical with the [token configured](http://mp.weixin.qq.com/wiki/8/f9a0b8382e0b77d87b3bcc1ce6fbc104.html#.E7.AC.AC.E4.B8.80.E6.AD.A5.EF.BC.9A.E5.A1.AB.E5.86.99.E6.9C.8D.E5.8A.A1.E5.99.A8.E9.85.8D.E7.BD.AE).
 ```yaml
-  wechat_validation_token: {Your Wechat Validation Token}
+wechat_validation_token: {Your Wechat Validation Token}
 ```
 
 Configure the following URL in the [Wechat](http://mp.weixin.qq.com/wiki/8/f9a0b8382e0b77d87b3bcc1ce6fbc104.html#.E7.AC.AC.E4.B8.80.E6.AD.A5.EF.BC.9A.E5.A1.AB.E5.86.99.E6.9C.8D.E5.8A.A1.E5.99.A8.E9.85.8D.E7.BD.AE):

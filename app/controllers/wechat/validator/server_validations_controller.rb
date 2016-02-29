@@ -9,4 +9,8 @@ class Wechat::Validator::ServerValidationsController < ::Wechat::Validator::Appl
 
   end
 
+  def create
+    render text: ''
+  end
+
 end
