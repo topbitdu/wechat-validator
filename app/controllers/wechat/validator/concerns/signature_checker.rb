@@ -46,6 +46,9 @@ module Wechat
             value.present?
           end
 
+          deprecate check_signature: :'Wechat::Validator::Concerns::SignatureValidator.validate_signature', deprecator: ActiveSupport::Deprecation.new('1.0', 'wechat-validator')
+          deprecate check_parameter: :'Wechat::Validator::Concerns::SignatureValidator.validate_parameter', deprecator: ActiveSupport::Deprecation.new('1.0', 'wechat-validator')
+
         end
 
         module ClassMethods
