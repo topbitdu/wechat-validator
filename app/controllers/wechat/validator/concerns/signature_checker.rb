@@ -12,7 +12,7 @@ module Wechat
 
             if token.blank?
               Rails.logger.warn 'Token is required to validate URL by Wechat.'
-              render status: :forbidden, text: 'The token parameter is required.'
+              render status: :bad_request, text: 'The token parameter is required.'
               return
             end
 
@@ -33,7 +33,7 @@ module Wechat
             if signature_matched
               render text: echo
             else
-              render status: :forbidden, text: "The signature parameter '#{signature}' and the generated parameter '#{actual_signature}' is not matched."
+              render status: :bad_request, text: "The signature parameter '#{signature}' and the generated parameter '#{actual_signature}' is not matched."
             end
 
           end
