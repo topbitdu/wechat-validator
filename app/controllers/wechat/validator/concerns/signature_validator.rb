@@ -8,7 +8,7 @@ module Wechat::Validator::Concerns::SignatureValidator
 
       if token.blank?
         Rails.logger.warn 'Token is required to validate URL by Wechat.'
-        render status: :forbidden, text: 'The token parameter is required.'
+        render status: :bad_request, text: 'The token parameter is required.'
         return
       end
 
