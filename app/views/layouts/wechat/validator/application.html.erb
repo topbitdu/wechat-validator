@@ -3,12 +3,13 @@
 <head>
   <title>Validator</title>
   <%= stylesheet_link_tag    "validator/application", media: "all" %>
-  <%= javascript_include_tag "validator/application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
+
+<%= javascript_include_tag "validator/application" %>
 
 </body>
 </html>
