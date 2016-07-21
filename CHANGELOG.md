@@ -9,5 +9,4 @@
 2. Depends on the wechat-validation v0.2 instead of v0.1
 
 ## v0.3
-1. Deprecated the Wechat Validator Concerns Signature Checker ::check_signature method, use the Wechat Validator Concerns Signature Validator ::validate_signature instead
-2. Deprecated the Wechat Validator Concerns Signature Checker ::check_parameter method, use the Wechat Validator Concerns Signature Validator ::validate_parameter instead
+1. Deprecated the Signature Checker concern, use the Signature Validator concern instead
