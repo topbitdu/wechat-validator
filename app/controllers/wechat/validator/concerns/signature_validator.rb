@@ -22,7 +22,7 @@ module Wechat::Validator::Concerns::SignatureValidator
       return unless validate_parameter 'signature', signature
       return unless validate_parameter 'echo',      echo
 
-      actual_signature  = ::Wechat::Validation::Signature.create nonce, timestamp, token # ::Wechat::Validation.sign nonce, timestamp, token
+      actual_signature  = Wechat::Validation::Signature.create nonce, timestamp, token # ::Wechat::Validation.sign nonce, timestamp, token
       signature_matched = signature==actual_signature
       Rails.logger.warn "Actual signature is #{actual_signature}, which #{signature_matched ? 'equals' : 'does not equal'} to the given signature #{signature}."
 
