@@ -6,7 +6,7 @@ module Wechat
 
         extend ActiveSupport::Concern
 
-        self.included do |includer|
+        included do |includer|
 
           def check_signature(token)
 

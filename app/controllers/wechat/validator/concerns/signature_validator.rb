@@ -2,7 +2,7 @@ module Wechat::Validator::Concerns::SignatureValidator
 
   extend ActiveSupport::Concern
 
-  self.included do |includer|
+  included do |includer|
 
     def validate_signature(token)
 
