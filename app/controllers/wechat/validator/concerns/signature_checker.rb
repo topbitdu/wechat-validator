@@ -48,7 +48,6 @@ module Wechat::Validator::Concerns::SignatureChecker
   end
 
   module ClassMethods
-    # def method_name do end
   end
 
 end
