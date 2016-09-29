@@ -1,11 +1,11 @@
 class Wechat::Validator::ServerValidationsController < ::Wechat::Validator::ApplicationController
 
-  include ::Wechat::Validator::Concerns::SignatureChecker
+  include ::Wechat::Validator::Concerns::SignatureValidator
 
   def index
 
     token = Rails.application.secrets.wechat_validation_token
-    check_signature token
+    validate_signature token
 
   end
 
