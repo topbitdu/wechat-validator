@@ -6,7 +6,7 @@
 
 ## v0.2
 1. Improve the Server Validation controller to support the POST request
-2. Depend on the wechat-validation v0.2 instead of v0.1
+2. Improve the Ruby Gem Specification to depend on the [wechat-validation](https://rubygems.org/gems/wechat-validation) v0.2 instead of v0.1
 
 ## v0.3
 1. Deprecate the Signature Checker concern, use the Signature Validator concern instead
