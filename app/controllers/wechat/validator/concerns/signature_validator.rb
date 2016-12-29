@@ -1,3 +1,6 @@
+##
+# Signature Validator 是微信签名验证的领域逻辑关注点。
+
 module Wechat::Validator::Concerns::SignatureValidator
 
   extend ActiveSupport::Concern
