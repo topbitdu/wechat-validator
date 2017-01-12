@@ -1,6 +1,8 @@
 # Wechat Validator 微信服务器验证器引擎
 
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/wechat-validator/frames)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
+
 [![Gem Version](https://badge.fury.io/rb/wechat-validator.svg)](https://badge.fury.io/rb/wechat-validator)
 [![Dependency Status](https://gemnasium.com/badges/github.com/topbitdu/wechat-validator.svg)](https://gemnasium.com/github.com/topbitdu/wechat-validator)
 
