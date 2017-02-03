@@ -13,3 +13,6 @@
 
 ## v0.3.1
 1. Improved the Ruby Gem Specification to support Rails v5.0
+
+## v0.3.2
+1. Improve the Ruby Gem Specification to depend on the [wechat-validation](https://rubygems.org/gems/wechat-validation) v0.2.1
