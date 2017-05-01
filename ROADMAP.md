@@ -12,7 +12,7 @@
 1. Deprecate the Signature Checker concern, use the Signature Validator concern instead
 
 ## v0.3.1
-1. Improve the Ruby Gem Specification to support Rails v5.0
+1. Improve the Ruby Gem Specification to support [rails](https://github.com/rails/rails) v5.0
 
 ## v0.3.2
 1. Improve the Ruby Gem Specification to depend on the [wechat-validation](https://rubygems.org/gems/wechat-validation) v0.2.1
